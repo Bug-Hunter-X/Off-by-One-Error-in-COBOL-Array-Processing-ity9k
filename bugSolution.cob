@@ -1,0 +1,13 @@
+```cobol
+01  WS-AREA.                           
+    05  WS-COUNT PIC 9(5) VALUE 0. 
+    05  WS-TABLE OCCURS 10 TIMES. 
+       10  WS-ITEM PIC 9(3). 
+
+PROCEDURE DIVISION.
+    PERFORM VARYING WS-COUNT FROM 1 BY 1 UNTIL WS-COUNT > 10
+       MOVE WS-COUNT TO WS-ITEM(WS-COUNT) 
+    END-PERFORM. 
+
+* Some other code...
+```
