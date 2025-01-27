@@ -1,0 +1,1 @@
+This repository demonstrates a common off-by-one error in COBOL array processing. The bug is in the loop control condition used to populate a table. The solution shows how to correct the condition to ensure all elements of the table are processed correctly.
